@@ -1,14 +1,19 @@
-import discord
+# Stdlib imports
 import asyncio
-import random
 import json
-import os
-import psutil
-from discord.ext import commands
-from cogs.utils import checks
-import livejson
 import math
+import os
+import random
+
+# Third-party imports
+import discord
+from discord.ext import commands
+import livejson  # This is the best module I've ever imported.
+import psutil
 import requests
+
+# Internal imports
+from cogs.utils import checks
 
 rasis = commands.Bot(command_prefix=';;', description='''Rasis! build 74
                      by Prappe — built with discord.py''',
